@@ -1,0 +1,23 @@
+﻿@using EntityCFP;
+@{
+    ViewBag.Title = "Index z pytle";
+}
+
+<h2>@ViewBag.Title</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Category_Id</th>
+            <th>Category_Name</th>
+        </tr>
+    <thead>
+    <tbody>
+        @foreach (Category c in ViewBag.CategoryList) { 
+        <tr>
+            <td>@c.Category_SK</td>
+            <td>@c.CategoryName</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

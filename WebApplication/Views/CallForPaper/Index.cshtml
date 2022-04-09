@@ -1,0 +1,27 @@
+﻿@using EntityCFP;
+@{
+    ViewBag.Title = "Call for Paper";
+}
+
+<h2>@ViewBag.Title</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>CallForPaper_Id</th>
+            <th>CallForPaperSeriesName</th>
+            <th>When</th>
+            <th>Location</th>
+        </tr>
+    <thead>
+    <tbody>
+        @foreach (CallForPaper c in ViewBag.CallForPaperList) {
+        <tr>
+            <td><a href="@Url.Action("Detail","CallForPaper",new { id = c.CallForPaper_SK })">@c.CallForPaperSeries_SK</a></td>
+            <td>@c.CallForPaperSeriesName</td>
+            <td>@c.When</td>
+            <td>@c.Location</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

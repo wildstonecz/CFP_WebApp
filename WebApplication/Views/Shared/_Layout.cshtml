@@ -1,0 +1,55 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.">
+    <meta name="author" content="Tomas Hruby">
+
+    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:version" content="5.1">
+
+    <title>WebAppka</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/bootstrap-theme.min.css")" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","CallForPaper")">CallForPaper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Category")">Category</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="bd-content order-1 py-5" id="content">
+        @RenderBody()
+    </main>
+
+
+    <footer class="pt-5 my-5 text-muted border-top">
+        Created by the Tomas Hruby 2022
+    </footer>
+
+    <script src="@Url.Content("~/Scripts/bootstrap.min.cs")"></script>
+
+
+
+
+</body>
+</html>
