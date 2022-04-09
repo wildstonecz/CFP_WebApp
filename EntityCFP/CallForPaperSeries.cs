@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EntityCFP {
     public class CallForPaperSeries {
-        public int CallForPaperSeries_SK;dadwa
+        public int CallForPaperSeries_SK;
         public int CallForPaperSeriesName;
-        public int CallForPaperSeriesShortName;aa;qpngm\pioeangaga
+        public int CallForPaperSeriesShortName;
     }
 }
