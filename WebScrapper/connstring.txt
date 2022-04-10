@@ -1,0 +1,1 @@
+﻿"Server=tcp:hru0231fei.database.windows.net,1433;Initial Catalog=AzureDb;Persist Security Info=False;User ID=vsb-admin;Password=cyRbE2qqKQDzm23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"

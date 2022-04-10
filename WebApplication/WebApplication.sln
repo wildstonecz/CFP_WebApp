@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityCFP", "..\EntityCFP\EntityCFP.csproj", "{8C61C113-D14F-4ACC-B8BD-4DBC39524BA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScrapper", "..\WebScrapper\WebScrapper.csproj", "{6562AB71-8A2A-472C-B73C-1ED7E35FA3D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8C61C113-D14F-4ACC-B8BD-4DBC39524BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C61C113-D14F-4ACC-B8BD-4DBC39524BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C61C113-D14F-4ACC-B8BD-4DBC39524BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6562AB71-8A2A-472C-B73C-1ED7E35FA3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6562AB71-8A2A-472C-B73C-1ED7E35FA3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6562AB71-8A2A-472C-B73C-1ED7E35FA3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6562AB71-8A2A-472C-B73C-1ED7E35FA3D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

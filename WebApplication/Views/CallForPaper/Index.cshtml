@@ -14,12 +14,12 @@
         </tr>
     <thead>
     <tbody>
-        @foreach (CallForPaper c in ViewBag.CallForPaperList) {
+        @foreach (CallForPaper cfp in ViewBag.CallForPaperList) {
         <tr>
-            <td><a href="@Url.Action("Detail","CallForPaper",new { id = c.CallForPaper_SK })">@c.CallForPaperSeries_SK</a></td>
-            <td>@c.CallForPaperSeriesName</td>
-            <td>@c.When</td>
-            <td>@c.Location</td>
+            <td><a href="@Url.Action("Detail","CallForPaper",new { id = cfp.CallForPaper_SK })">@cfp.CallForPaperSeries_SK</a></td>
+            <td>@cfp.CallForPaperSeriesName</td>
+            <td>@cfp.When</td>
+            <td>@cfp.Location</td>
         </tr>
         }
     </tbody>

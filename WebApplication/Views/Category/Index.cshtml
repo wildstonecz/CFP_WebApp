@@ -12,10 +12,10 @@
         </tr>
     <thead>
     <tbody>
-        @foreach (Category c in ViewBag.CategoryList) { 
+        @foreach (Category cat in ViewBag.CategoryList) { 
         <tr>
-            <td>@c.Category_SK</td>
-            <td>@c.CategoryName</td>
+            <td>@cat.Category_SK</td>
+            <td>@cat.CategoryName</td>
         </tr>
         }
     </tbody>

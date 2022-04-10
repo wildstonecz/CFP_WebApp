@@ -12,7 +12,7 @@ namespace WebApplication.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            ViewBag.CategoryList = Category.getFakeCategoriesList();
+            ViewBag.CategoryList = Category.getCategoryList();
             return View();
         }
     }
