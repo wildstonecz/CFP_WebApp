@@ -1,26 +1,15 @@
-﻿@using EntityCFP;
-<h2>Detail</h2>
+﻿@model EntityCFP.CallForPaperSeries
 <p>
-    @Model.CallForPaper_SK
+    @Model.CallForPaperSeries_SK
 </p>
 
+<p>
+    @Model.CallForPaperSeriesShortName
+</p>
 <p>
     @Model.CallForPaperSeriesName
 </p>
 
-<p>
-    @Model.When
-</p>
-
-<p>
-    @Model.Location
-</p>
-
-<p>
-    @Model.CallForPaperText
-</p>
-
-<h2>@ViewBag.Title</h2>
 <table class="table">
     <thead>
         <tr>
@@ -30,7 +19,7 @@
         </tr>
     <thead>
     <tbody>
-        @foreach (CallForPaper cfp in ViewBag.CallForPaperList) {
+        @foreach (var cfp in Model.cfpList) {
             <tr>
                 <td><a href="@Url.Action("Detail","CallForPaper",new { id = cfp.CallForPaper_SK })">@cfp.CallForPaper_SK</a></td>
                 <td>@cfp.When</td>
@@ -39,3 +28,4 @@
         }
     </tbody>
 </table>
+

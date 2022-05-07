@@ -12,6 +12,7 @@ namespace EntityCFP {
         public string CallForPaperSeriesName;
         public string CallForPaperSeriesShortName;
         public int numberOfEntries;
+        public List<CallForPaper> cfpList;
 
         public static CallForPaperSeries getCallForPaperSeries(int id) {
             CallForPaperSeries cfp = new CallForPaperSeries();
@@ -34,8 +35,8 @@ namespace EntityCFP {
                         };
                     }
                 }
-
                 conn.Close();
+                cfp.cfpList = CallForPaper.getCallForPaperListBySeries(id);
             }
             catch (Exception e) {
                 //handle

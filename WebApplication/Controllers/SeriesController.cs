@@ -17,8 +17,8 @@ namespace WebApplication.Controllers
         }
 
         public ActionResult Detail(int id) {
+            ViewBag.Title = "Detail";
             CallForPaperSeries serie = CallForPaperSeries.getCallForPaperSeries(id);
-            ViewBag.CallForPaperList = CallForPaper.getCallForPaperListBySeries(id);
             return View(serie);
         }
     }

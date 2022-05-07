@@ -17,7 +17,7 @@
     <tbody>
         @foreach (CallForPaperSeries cfp in ViewBag.CallForPaperSeriesList) {
         <tr>
-            <td><a href="@Url.Action("Detail","CallForPaperSeries",new { id = cfp.CallForPaperSeries_SK })">@cfp.CallForPaperSeries_SK</a></td>
+            <td><a href="@Url.Action("Detail","Series",new { id = cfp.CallForPaperSeries_SK })">@cfp.CallForPaperSeries_SK</a></td>
             <td>@cfp.CallForPaperSeriesName</td>
             <td>@cfp.CallForPaperSeriesName</td>
             <td>@cfp.numberOfEntries</td>
