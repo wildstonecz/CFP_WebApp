@@ -1,0 +1,35 @@
+﻿@model EntityCFP.Category
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+<p>
+    @Model.Category_SK
+</p>
+
+<p>
+    @Model.CategoryName
+</p>
+<p>
+    @Model.CategoryUsage
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>CallForPaper_Id</th>
+            <th>When</th>
+            <th>Location</th>
+        </tr>
+    <thead>
+    <tbody>
+        @foreach (var related in Model.relatedCategories) {
+            <tr>
+                <td><a href="@Url.Action("Detail","Category",new { id = related.Category_SK })">@related.Category_SK</a></td>
+                <td>@related.CategoryName</td>
+                <td>@related.CategoryUsage</td>
+            </tr>
+        }
+    </tbody>
+</table>

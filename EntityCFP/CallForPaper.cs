@@ -18,7 +18,7 @@ namespace EntityCFP
         public string When;
         public string Location;
 
-        public static CallForPaper getCallForPaper(int id) {
+        public static CallForPaper getCallForPaperByID(int id) {
             CallForPaper cfp=new CallForPaper();
             SqlConnection conn = new SqlConnection("Server=localhost;Database=AzureDb;Trusted_Connection=True;");
             try {
@@ -86,7 +86,7 @@ namespace EntityCFP
             return list;
         }
 
-        public static List<CallForPaper> getCallForPaperListBySeries(int id) {
+        public static List<CallForPaper> getCallForPaperListBySeriesID(int id) {
             List<CallForPaper> list = new List<CallForPaper>();
             SqlConnection conn = new SqlConnection("Server=localhost;Database=AzureDb;Trusted_Connection=True;");
             try {

@@ -1,6 +1,6 @@
 ﻿@using EntityCFP;
 @{
-    ViewBag.Title = "Calls for papers";
+    ViewBag.Title = "Categories";
 }
 
 <h2>@ViewBag.Title</h2>
@@ -8,14 +8,16 @@
     <thead>
         <tr>
             <th>Category_Id</th>
-            <th>Category_Name</th>
+            <th>Category Name</th>
+            <th>Category Usage</th>
         </tr>
     <thead>
     <tbody>
         @foreach (Category cat in ViewBag.CategoryList) { 
         <tr>
-            <td>@cat.Category_SK</td>
+            <td><a href="@Url.Action("Detail","Category",new { id = cat.Category_SK })">@cat.Category_SK</a></td>
             <td>@cat.CategoryName</td>
+            <td>@cat.CategoryUsage</td>
         </tr>
         }
     </tbody>

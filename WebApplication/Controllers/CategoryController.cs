@@ -15,5 +15,11 @@ namespace WebApplication.Controllers
             ViewBag.CategoryList = Category.getCategoryList();
             return View();
         }
+
+        public ActionResult Detail(int id) {
+            ViewBag.Title = "Detail";
+            Category category = Category.getCategoryByID(id);
+            return View(category);
+        }
     }
 }

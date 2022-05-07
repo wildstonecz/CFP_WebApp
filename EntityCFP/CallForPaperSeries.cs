@@ -14,7 +14,7 @@ namespace EntityCFP {
         public int numberOfEntries;
         public List<CallForPaper> cfpList;
 
-        public static CallForPaperSeries getCallForPaperSeries(int id) {
+        public static CallForPaperSeries getCallForPaperSeriesByID(int id) {
             CallForPaperSeries cfp = new CallForPaperSeries();
             SqlConnection conn = new SqlConnection("Server=localhost;Database=AzureDb;Trusted_Connection=True;");
             try {
@@ -36,7 +36,7 @@ namespace EntityCFP {
                     }
                 }
                 conn.Close();
-                cfp.cfpList = CallForPaper.getCallForPaperListBySeries(id);
+                cfp.cfpList = CallForPaper.getCallForPaperListBySeriesID(id);
             }
             catch (Exception e) {
                 //handle
