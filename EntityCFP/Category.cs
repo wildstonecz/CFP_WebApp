@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace EntityCFP {
     public class Category {
@@ -42,6 +43,7 @@ namespace EntityCFP {
             }
             catch(Exception e) {
                 //handle
+                Debug.WriteLine(e.Message);
                 conn.Close(); 
             }
 

@@ -118,6 +118,7 @@
     <Compile Include="Controllers\CallForPaperController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SeriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +155,8 @@
     <Content Include="Views\CallForPaper\Index.cshtml" />
     <Content Include="Views\CallForPaper\Detail.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Series\Index.cshtml" />
+    <Content Include="Views\Series\Detail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
